@@ -64,7 +64,7 @@ print("a is a negative or not",a<0)
 print("a is a zero or not",a==0)
 print("Calculate Total Cost")
 cost=int(input("enter a cost:"))
-qty=int("enter a number of items:")
+qty=int(input("enter a number of items:"))
 totcost=cost*qty
 print("Total cost:",totcost)
 print("===========simple calculator==========")
