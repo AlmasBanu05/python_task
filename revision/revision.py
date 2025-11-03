@@ -129,6 +129,7 @@ elif c>b and c>d:
 else:
     print(d,"is a largest number")
 print("==========nested if pos or neg or zero")
+s=int(input("enter a number:"))
 if s>0:
     print(s,"is a positive number")
     if s%2==0:
