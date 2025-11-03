@@ -56,8 +56,8 @@ print("simple interest:",sim)
 print("===========Find Area of a Rectangle===========")
 l=int(input("enter a length:"))
 b=int(input("enter a breadth:"))
-area=l*b
-print("Area of rectangle:",area)
+areaofrectangle=l*b
+print("Area of rectangle:",areaofrectangle)
 print("==========Check Positive or Negative==========")
 print("a is a positive or not",a>0)
 print("a is a negative or not",a<0)
