@@ -56,15 +56,13 @@ while temp > 0:
 print("Sum of digits:", s)
 print("\n")
 
-print(" Count how many numbers between 1 and 500 are perfect cubes")
+print("Count how many numbers between 1 and 500 are perfect cubes")
 count = 0
 for i in range(1, 501):
-    a = 1
-    while a * a * a <= i:
-        if a * a * a == i:
-            count = count + 1
-            break
-        a = a + 1
+    cube_root = round(i ** (1/3))
+    if cube_root ** 3 == i:
+        count += 1
+print("Total perfect cubes between 1 and 500:", count)
 print("Perfect cubes count:", count)
 print("\n")
 
