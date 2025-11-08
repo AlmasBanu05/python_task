@@ -66,10 +66,61 @@ for i in range(n,0,-1):
     for j in range(i):
         print("*",end="")
     print()
+print("9. Various Number and Alphabet Patterns")
 
-print("Write a program to Print the patterns as shown below")
+print("Pattern 9.1 Number Triangle")
 n=int(input("Enter number of rows: "))
 for i in range(1,n+1):
     for j in range(1,i+1):
-        print(j,end="")
+        print(j,end=" ")
+    print()
+
+print("Pattern 9.2 Inverse Number Triangle")
+n=int(input("Enter number of rows: "))
+for i in range(n,0,-1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+print("Pattern 9.3 Left Number Triangle")
+n=int(input("Enter number of rows: "))
+for i in range(1,n+1):
+    for j in range(n-i):
+        print(" ",end="")
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+print("Pattern 9.4 Alphabet Increasing Block")
+n=int(input("Enter number of rows: "))
+ch=65
+for i in range(1,n+1):
+    for j in range(i):
+        print(chr(ch),end="")
+    print()
+    ch+=1
+
+print("Pattern 9.5 Continuous Alphabet Triangle")
+n=int(input("Enter number of rows: "))
+ch=65
+for i in range(1,n+1):
+    for j in range(i):
+        print(chr(ch),end="")
+        ch+=1
+    print()
+
+print("Pattern 9.6 Repeated Alphabet Triangle")
+n=int(input("Enter number of rows: "))
+ch=65
+for i in range(1,n+1):
+    for j in range(i):
+        print(chr(ch),end="")
+    print()
+    ch+=1
+
+print("Pattern 9.7 Alphabet Pyramid")
+n=int(input("Enter number of rows: "))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(chr(64+j),end="")
     print()
