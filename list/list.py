@@ -96,7 +96,7 @@ print(d)
 
 print("5. Delete an element from a list using del")
 e=[]
-n=(input("How many elements: "))
+n=int(input("How many elements: "))
 for i in range(n):
     e.append(input("Enter element: "))
 idx=int(input("Enter index to delete: "))
