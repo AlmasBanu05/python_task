@@ -2,7 +2,7 @@ import pandas as pd
 data=[5,10,15,20]
 df=pd.Series(data)
 print(df)
-df=pd.Series(data,index=['a','b','c','d',])
+df=pd.Series(data,index=['a','b','c','d'])
 print(df)
 print("==========Create a DataFrame=========")
 d={"name":['ravi','kiran','meena'],"age":[22,25,28],"city":['chennai','bangalore','hyderabad']}
@@ -14,7 +14,7 @@ print(df["name"])
 print("===========2.	Print Name and City columns together===========")
 print(df[['name','city']])
 print("=========Print the second row using loc=========")
-print(df.loc['b'])
+print(df.loc[1])
 print(df.iloc[1])
 print("==========Row Operations==========")
 print(df[0:2])
